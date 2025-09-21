@@ -1,0 +1,46 @@
+# Maven target directory
+/target/
+
+# Eclipse/IntelliJ project files
+/.idea/
+/*.iml
+/.classpath
+/.project
+/.settings/
+
+# VS Code files
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Spring Boot specific
+spring-boot-devtools.properties
+
+# Environment files
+.env
+.env.local
+
+# Flyway / Liquibase
+flyway/sql/
+liquibase/
+
+# Node / frontend (if using React, Vue, etc.)
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# Backup files
+*.bak
+*.old
