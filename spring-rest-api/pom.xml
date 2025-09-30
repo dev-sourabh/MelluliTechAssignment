@@ -163,6 +163,18 @@
           <version>2.19.2</version>
       </dependency>
 
+      <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-server</artifactId>
+          <version>12.0.12</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-servlet</artifactId>
+          <version>11.0.15</version>
+      </dependency>
+
   </dependencies>
   <build>
     <finalName>spring-rest-api</finalName>
@@ -194,6 +206,16 @@
               <version>3.1.2</version>
               <configuration>
                   <argLine>-Dnet.bytebuddy.experimental=true</argLine>
+              </configuration>
+          </plugin>
+          <plugin>
+              <groupId>org.eclipse.jetty</groupId>
+              <artifactId>jetty-maven-plugin</artifactId>
+              <version>11.0.15</version>
+              <configuration>
+                  <webApp>
+                      <contextPath>/spring-rest-api</contextPath>
+                  </webApp>
               </configuration>
           </plugin>
       </plugins>

@@ -8,6 +8,12 @@
 
 ---
 
+## Added jetty
+
+```bash
+mvn jetty:run
+````
+
 ## Steps
 
 1. **Build the WAR**
